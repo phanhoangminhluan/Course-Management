@@ -1,0 +1,45 @@
+2019-08-01 16:25:25.943  INFO 736 --- [http-nio-8080-exec-3] c.l.C.c.aop.aspect.LoggingAspect         : anonymousUser: UserServiceImpl.getAll()| SUCCESS
+2019-08-01 16:26:16.065  INFO 736 --- [http-nio-8080-exec-5] c.l.C.c.aop.aspect.LoggingAspect         : ad1: InstructorServiceImpl.getAll()| SUCCESS
+2019-08-01 16:27:18.112  INFO 736 --- [http-nio-8080-exec-8] c.l.C.c.aop.aspect.LoggingAspect         : ad1: UserServiceImpl.add(..)| SUCCESS
+2019-08-01 16:27:18.509  INFO 736 --- [http-nio-8080-exec-8] c.l.C.c.aop.aspect.LoggingAspect         : ad1: UserServiceImpl.add(..)| SUCCESS
+2019-08-01 16:27:43.802  INFO 736 --- [http-nio-8080-exec-9] c.l.C.c.aop.aspect.LoggingAspect         : ad1: UserServiceImpl.add(..)| SUCCESS
+2019-08-01 16:27:44.194  WARN 736 --- [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2019-08-01 16:27:44.195 ERROR 736 --- [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'ad9' for key 'PRIMARY'
+2019-08-01 16:27:44.200 ERROR 736 --- [http-nio-8080-exec-9] o.h.i.ExceptionMapperStandardImpl        : HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-08-01 16:27:44.205 ERROR 736 --- [http-nio-8080-exec-9] c.l.C.c.aop.aspect.LoggingAspect         : ad1: UserServiceImpl.add(..)| FAIL  | could not execute statement; SQL [n/a]; constraint [PRIMARY]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2019-08-01 16:27:44.217  WARN 736 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [PRIMARY]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-08-01 16:30:11.558  INFO 12756 --- [restartedMain] c.l.C.CourseManagementApplication        : Starting CourseManagementApplication on luanphm with PID 12756 (started by Phan Hoang Minh Luan in E:\One Drive\OneDrive\MiluDrive\Cybersoft Mentoring\CourseManagement)
+2019-08-01 16:30:11.561 DEBUG 12756 --- [restartedMain] c.l.C.CourseManagementApplication        : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-01 16:30:11.561  INFO 12756 --- [restartedMain] c.l.C.CourseManagementApplication        : No active profile set, falling back to default profiles: default
+2019-08-01 16:30:11.623  INFO 12756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-01 16:30:11.623  INFO 12756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-01 16:30:12.763  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-01 16:30:12.907  INFO 12756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137ms. Found 12 repository interfaces.
+2019-08-01 16:30:13.345  INFO 12756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53b15a83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-01 16:30:13.828  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-01 16:30:13.849  INFO 12756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-01 16:30:13.849  INFO 12756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-01 16:30:14.021  INFO 12756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-01 16:30:14.022  INFO 12756 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2398 ms
+2019-08-01 16:30:14.656  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-01 16:30:14.773  INFO 12756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-01 16:30:14.836  INFO 12756 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-01 16:30:14.910  INFO 12756 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-01 16:30:14.911  INFO 12756 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-01 16:30:15.033  INFO 12756 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-01 16:30:15.172  INFO 12756 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-01 16:30:15.878  INFO 12756 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-01 16:30:16.264  INFO 12756 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-08-01 16:30:16.963  INFO 12756 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72a1b2d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@679de3fb, org.springframework.security.web.header.HeaderWriterFilter@14f12737, org.springframework.security.web.authentication.logout.LogoutFilter@49f9b9c5, com.luanphm.CourseManagement.configuration.security_configuration.JwtLoginFilter@16980525, com.luanphm.CourseManagement.configuration.security_configuration.JwtAuthenticationFilter@2057a996, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a073005, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7bf24586, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@467f61c6, org.springframework.security.web.session.SessionManagementFilter@6e6796b9, org.springframework.security.web.access.ExceptionTranslationFilter@5069e48, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57ead380]
+2019-08-01 16:30:17.556  INFO 12756 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-01 16:30:17.619  WARN 12756 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-01 16:30:17.731  WARN 12756 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-08-01 16:30:18.063  INFO 12756 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2019-08-01 16:30:18.172  INFO 12756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-01 16:30:18.239  INFO 12756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-01 16:30:18.241  INFO 12756 --- [restartedMain] c.l.C.CourseManagementApplication        : Started CourseManagementApplication in 7.257 seconds (JVM running for 8.387)
+2019-08-01 16:30:18.434  INFO 12756 --- [RMI TCP Connection(1)-192.168.139.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-01 16:30:18.434  INFO 12756 --- [RMI TCP Connection(1)-192.168.139.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-01 16:30:18.452  INFO 12756 --- [RMI TCP Connection(1)-192.168.139.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
