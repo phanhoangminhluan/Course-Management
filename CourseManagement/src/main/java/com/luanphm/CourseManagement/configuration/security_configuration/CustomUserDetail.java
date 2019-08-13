@@ -28,4 +28,5 @@ public class CustomUserDetail  extends User implements UserDetails, Serializable
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
 }

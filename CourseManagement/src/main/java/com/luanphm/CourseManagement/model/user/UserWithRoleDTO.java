@@ -48,4 +48,5 @@ public class UserWithRoleDTO {
             throw new RecordNotFoundException("USER NOT FOUND");
         }
     }
+
 }

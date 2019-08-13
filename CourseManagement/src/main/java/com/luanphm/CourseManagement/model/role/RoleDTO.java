@@ -13,6 +13,7 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+@ToString
 public class RoleDTO {
 
     private int id;

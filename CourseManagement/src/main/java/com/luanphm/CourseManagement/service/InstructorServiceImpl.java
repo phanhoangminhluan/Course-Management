@@ -5,6 +5,7 @@ import com.luanphm.CourseManagement.model.instructor.InstructorDTO;
 import com.luanphm.CourseManagement.repository.instructor.InstructorRepository;
 import com.luanphm.CourseManagement.service.SharedService.MyAbstractService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -31,6 +32,7 @@ public class InstructorServiceImpl extends MyAbstractService<Instructor, String,
     }
 
     @Override
+//    @Secured("ROLE_ADMIN")
     public List<InstructorDTO> getAll() {
         return super.getAll();
     }
