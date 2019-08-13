@@ -11,10 +11,5 @@ public class CourseManagementApplication {
 	private static final Logger logger = LoggerFactory.getLogger(CourseManagementApplication.class);
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(CourseManagementApplication.class, args);
-//
-//		logger.debug("Debugging log");
-//		logger.info("Info log");
-//		logger.warn("Hey, This is a warning!");
-//		logger.error("Oops! We have an Error. OK");
 	}
 }

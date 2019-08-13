@@ -33,7 +33,6 @@ public class TokenAuthenticationService {
 
 
     public static void addAuthentication(HttpServletResponse response, String username) {
-//        System.out.println("TokenAuthenticationService: addAuthentication()");
         String jwt = Jwts
                 .builder()
                 .setSubject(username)
@@ -44,7 +43,6 @@ public class TokenAuthenticationService {
     }
 
     public static Authentication getAuthentication(HttpServletRequest request) {
-//        System.out.println("TokenAuthenticationService: getAuthentication");
         String token = request.getHeader(HEADER_STRING);
         String user = null;
         if (token != null) {

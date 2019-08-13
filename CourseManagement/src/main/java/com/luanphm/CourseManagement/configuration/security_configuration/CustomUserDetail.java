@@ -1,7 +1,8 @@
 package com.luanphm.CourseManagement.configuration.security_configuration;
 
-import com.luanphm.CourseManagement.entity.Role;
-import lombok.*;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.experimental.Accessors;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;

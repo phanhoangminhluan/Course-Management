@@ -30,19 +30,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        System.out.println("WebSecurityConfig: passwordEncoder()");
         return new BCryptPasswordEncoder();
     }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-//        System.out.println("WebSecurityConfig: configure(AuthenticationManagerBuilder auth)");
         auth.userDetailsService(userDetailService).passwordEncoder(passwordEncoder());
     }
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-//        System.out.println("WebSecurityConfig: configure(WebSecurity web)");
         super.configure(web);
     }
 
@@ -57,10 +54,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .anyRequest()
                     .authenticated()
                 .and()
-//                    .addFilterBefore(new JwtLoginFilter("/login", authenticationManager()),UsernamePasswordAuthenticationFilter.class)
-//                    .addFilterBefore(new JwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
-                .addFilter(new JwtAuthenticationFilter2(authenticationManager()))
-                .addFilter(new JwtAuthorizationFilter(authenticationManager(), userDetailService));
+                    .addFilter(new JwtAuthenticationFilter(authenticationManager()))
+                    .addFilter(new JwtAuthorizationFilter(authenticationManager(), userDetailService));
 
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }

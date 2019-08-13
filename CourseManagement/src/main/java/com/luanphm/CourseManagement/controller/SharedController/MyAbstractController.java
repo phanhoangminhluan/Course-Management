@@ -1,15 +1,12 @@
 package com.luanphm.CourseManagement.controller.SharedController;
 
 import com.luanphm.CourseManagement.service.SharedService.MyInterfaceService;
-import org.hibernate.exception.ConstraintViolationException;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
 import javax.validation.Valid;
-import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
 
 public abstract class MyAbstractController<ID, M> {

@@ -11,7 +11,6 @@ import java.util.Objects;
 
 @Embeddable
 @Data
-//@RequiredArgsConstructor
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

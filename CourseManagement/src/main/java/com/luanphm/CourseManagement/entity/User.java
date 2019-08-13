@@ -69,16 +69,12 @@ public class User extends MyBaseEntity<String> {
         this.role = new Role(instructor.user().role().id());
     }
 
-    //e.id, e.password, e.email, e.firstName, e.lastName, e.role.id
     public User(String id, String password, String email, String firstName, String lastName, int roleId) {
         this.id = id;
         this.password = password;
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
-//        this.role = Role.builder()
-//                    .id(roleId)
-//                .build();
         this.role = new Role(roleId);
     }
 

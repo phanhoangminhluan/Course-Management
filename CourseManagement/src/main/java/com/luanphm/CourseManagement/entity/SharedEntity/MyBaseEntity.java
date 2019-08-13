@@ -1,9 +1,11 @@
 package com.luanphm.CourseManagement.entity.SharedEntity;
 
-import lombok.*;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.experimental.Accessors;
 
-import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotNull;
@@ -20,12 +22,4 @@ public class MyBaseEntity<IdType extends Serializable>{
     @NotNull
     @Id
     protected IdType id;
-
-//    public IdType getId() {
-//        return id;
-//    }
-//
-//    public void setId(IdType id) {
-//        this.id = id;
-//    }
 }

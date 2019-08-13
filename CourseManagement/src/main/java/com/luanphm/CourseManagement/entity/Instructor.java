@@ -14,7 +14,6 @@ import java.util.Objects;
 @Data
 @Getter
 @Setter
-//@RequiredArgsConstructor
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder

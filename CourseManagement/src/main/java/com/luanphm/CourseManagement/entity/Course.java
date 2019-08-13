@@ -7,7 +7,6 @@ import lombok.experimental.Accessors;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -16,7 +15,6 @@ import java.util.List;
 @Builder
 @ToString
 @NoArgsConstructor
-//@RequiredArgsConstructor
 @AllArgsConstructor
 @Accessors(fluent = true)
 @Entity

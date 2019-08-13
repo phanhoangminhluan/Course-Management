@@ -7,7 +7,6 @@ import lombok.*;
 import lombok.experimental.Accessors;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -17,7 +16,6 @@ import java.util.Objects;
 @Builder
 @ToString
 @NoArgsConstructor
-//@RequiredArgsConstructor
 @AllArgsConstructor
 @Accessors(fluent = true)
 @Entity
